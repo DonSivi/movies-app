@@ -28,7 +28,7 @@ export const useMovies = () => {
     })
 
     const upcomingQuery = useQuery({ 
-        queryKey: ['movies', 'topRated'], 
+        queryKey: ['movies', 'upcoming'], 
         queryFn: upcomingAction,
         staleTime: 1000 * 60 * 60 * 24 // 24 horas
     })
